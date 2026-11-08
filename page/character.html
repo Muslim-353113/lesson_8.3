@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Fight 2 Персонажи</title>
+    <link rel="stylesheet" href="../styles/character.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../page/index.html" class="logo">
+            <img src="../images/Logo.webp" alt="Shadow Fight 2">
+        </a>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="demons.html">Демоны</a>
+            <a href="weapons.html">Топ Оружие</a>
+            <a href="raids.html">Рейды</a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="free-button">Скачать</a>
+        </nav>
+        <div class="site-search">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="siteSearchInput"
+                    placeholder="ПОИСК ПО САЙТУ..."
+                    autocomplete="off"
+                >
+                <button id="siteSearchButton" type="button">⌕</button>
+            </div>
+
+            <div class="search-results" id="siteSearchResults"></div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="video_background">
+            <video autoplay muted loop playsinline id="header_background">
+                <source src="../images/Gameplay.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">Персонажи в</p>
+            <img src="../images/Logo.webp" alt="Shadow Fight 2" class="game-logo">
+        </div>
+    </div>
+    <section class="characters-section">
+        <div class="characters-container">
+            <div class="characters-header">
+                <p>МИР ТЕНЕЙ</p>
+                <h2>ТЕ, КТО НА ПУТИ ТЕНИ</h2>
+            </div>
+            <div class="character-slider">
+
+                <div class="character-image">
+                    <img id="characterImg" src="../images/Shadow.webp" alt="Shadow">
+                </div>
+
+                <div class="character-info">
+
+                    <p class="character-label" id="characterRole">
+                        ГЛАВНЫЙ ГЕРОЙ
+                    </p>
+
+                    <h3 id="characterName">ТЕНЬ</h3>
+
+                    <div class="character-line"></div>
+
+                    <p class="character-description" id="characterDescription">
+                        Когда-то великий воин, который открыл Врата Теней
+                        и потерял своё тело. Теперь он должен победить демонов
+                        и исправить свою ошибку.
+                    </p>
+
+                    <div class="character-controls">
+                        <button id="prevCharacter">&#8592;</button>
+
+                        <div class="character-dots" id="characterDots"></div>
+
+                        <button id="nextCharacter">&#8594;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="final-cta" id="play">
+    <div class="final-container">
+        <p class="final-label">ВОРОТА ВСЁ ЕЩЁ ОТКРЫТЫ.</p>
+        <h2>
+            Твоя тень<br>
+            ждёт.
+        </h2>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="final-button">
+            СКАЧАЙТЕ SHADOW FIGHT 2</a>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-left">
+                <span>© Nekki. Все права защищены.</span>
+            </div>
+            <div class="footer-right">
+                <a href="#">Лицензионное соглашение с конечным пользователем (EULA)</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="../js/character.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/search-data.js"></script>
+</html>

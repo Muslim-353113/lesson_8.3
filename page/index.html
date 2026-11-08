@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Fight 2</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="../images/Logo.webp" alt="Shadow Fight 2">
+        </a>
+        <nav class="nav">
+            <a href="character.html">Персонажи</a>
+            <a href="demons.html">Демоны</a>
+            <a href="weapons.html">Топ Оружие</a>
+            <a href="raids.html">Рейды</a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="free-button">Скачать</a>
+        </nav>
+        <div class="site-search">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="siteSearchInput"
+                    placeholder="ПОИСК ПО САЙТУ..."
+                    autocomplete="off"
+                >
+                <button id="siteSearchButton" type="button">⌕</button>
+            </div>
+
+            <div class="search-results" id="siteSearchResults"></div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="video_background">
+            <video  autoplay muted loop playsinline id="header_background">
+                <source src="../images/Gameplay.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">Добро пожаловать в</p>
+            <img src="../images/Logo.webp" alt="Shadow Fight 2" class="game-logo">
+        </div>
+    </div>
+    <main class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-label">Файтинг РПГ</p>
+                <p class="about-subtitle">ТЕЛО ТЕНИ. ДУХ СТАЛИ.</p>
+                <h2>Shadow Fight 2 Сюжет:</h2>
+                <div class="description">
+                    <p>Shadow Fight 2 рассказывает историю легендарного воина по имени Тень. Когда-то он был могучим бойцом, но совершил роковую ошибку, открыв Врата Теней и выпустив в мир шестерых опасных демонов. Их сила поглотила его тело, превратив его в живую тень.<br>
+                        Теперь Тени предстоит пройти через шесть различных миров, одолеть демонов и их грозных приспешников, собрать легендарное оружие и доспехи, а также найти способ вернуть себе прежний облик.<br>
+                        На своем пути Тень сталкивается с бесчисленными врагами, раскрывает древние тайны и встречает могущественных союзников. Однако самое сложное испытание еще впереди: ему предстоит сразиться с Титаном — правителем мира, скрывающегося за Вратами Теней. Чтобы победить его и спасти мир, Тень должен стать сильнее, чем когда-либо прежде.</p>
+                </div>
+                <div class="about-actions">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="about-button">СКАЧАТЬ SHADOW FIGHT 2</a>
+                </div>
+            </div>
+            <div class="characters">
+                <img src="../images/Shadow_Fight_2_Poster.jpg" alt="Shadow Fight 2 Characters">
+            </div>
+        </div>
+    </main>
+    <section class="how-to-section">
+        <div class="how-container">
+            <div class="how-header">
+                <div class="how-title">
+                    <p class="how-label">
+                        ЛЕГКО ОСВОИТЬ. СЛОЖНО СТАТЬ МАСТЕРОМ.
+                    </p>
+                    <h2>
+                        Как играть в<br>
+                        Shadow Fight 2
+                    </h2>
+
+                </div>
+
+                <div class="how-description">
+                    <p>
+                        Двигайся, бей, защищайся, адаптируйся.
+                        На освоение основ уходит минута.
+                        На расчет времени требуется больше времени.
+                    </p>
+                </div>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="step-number">01</span>
+                    <h3>
+                        Изучите диапазон
+                    </h3>
+                    <p>
+                        В Shadow Fight 2 бой ведётся на краю вашего оружия.
+                        Двигайтесь вплотную и на расстоянии, возвращайтесь
+                        в нейтральное положение для защиты и оценивайте
+                        стойку противника, прежде чем наносить удар.
+                        Большинство поражений происходит из-за преждевременных
+                        ударов, а не из-за слабых.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">02</span>
+                    <h3>
+                        Выиграйте серию<br>
+                        из трех матчей.
+                    </h3>
+                    <p>
+                        Каждый поединок проводится до двух побед.
+                        Выиграйте два раунда, и победа за вами.
+                        Раунд также может закончиться по истечении времени,
+                        поэтому полоска здоровья имеет такое же значение,
+                        как и нокаут.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">03</span>
+                    <h3>
+                        Экипируйтесь,<br>
+                        улучшайте и<br>
+                        победите демона.
+                    </h3>
+                    <p>
+                        За монеты и драгоценные камни можно купить оружие,
+                        доспехи, шлемы, дальнобойное оружие и магию,
+                        каждая из которых имеет свои характеристики:
+                        дальность действия, скорость и требования к уровню.
+                        Затем появляются врата: Рысь, Отшельник, Мясник,
+                        Оса, Вдова и Сёгун сражаются по-разному,
+                        и для каждого требуется свой набор снаряжения.
+                    </p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">04</span>
+                    <h3>
+                        Сражайтесь<br>
+                        в рейдах
+                    </h3>
+                    <p>
+                        Объединяйтесь с другими игроками, чтобы сразиться
+                        с могущественными боссами. Проверяйте свои боевые
+                        навыки, наносите урон противникам и получайте
+                        ценные награды. В рейдах важны не только сила
+                        оружия, но и правильная тактика.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sf-world">
+        <h2 class="sf-world-title">
+            Shadow Fight 2 — мир сражений и испытаний
+        </h2>
+        <div class="sf-world-grid">
+            <div class="sf-world-card">
+                <h3>История Тени</h3>
+                <img src="../images/Story.jpg" alt="История Тени">
+                <p>
+                    Узнай историю легендарного воина, который открыл
+                    Врата Теней и превратился в живую тень.
+                    Сразись с демонами и попробуй вернуть свой прежний облик.
+                </p>
+            </div>
+            <div class="sf-world-card">
+                <h3>Турнир</h3>
+                <img src="../images/Tournament.jpg" alt="Турнир">
+                <p>
+                    Проверь свои навыки в серии сражений.
+                    Побеждай сильных противников, проходи испытания
+                    и открывай новые возможности.
+                </p>
+            </div>
+            <div class="sf-world-card">
+                <h3>Выживание</h3>
+                <img src="../images/Survival.jpg" alt="Выживание">
+                <p>
+                    Сразись с несколькими противниками подряд.
+                    Продержись как можно дольше и докажи,
+                    что способен выдержать самые тяжёлые испытания.
+                </p>
+            </div>
+
+            <div class="sf-world-card">
+                <h3>Подземный мир</h3>
+                <img src="../images/Raid.webp" alt="Подземный мир">
+                <p>
+                    Отправляйся в опасные рейды, объединяйся
+                    с другими игроками и сражайся с могущественными
+                    боссами ради ценных наград.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="final-cta" id="play">
+        <div class="final-container">
+            <p class="final-label">ВОРОТА ВСЁ ЕЩЁ ОТКРЫТЫ.</p>
+            <h2>
+                Твоя тень<br>
+                ждёт.
+            </h2>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="final-button">
+                СКАЧАЙТЕ SHADOW FIGHT 2</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <span>© Nekki. Все права защищены.</span>
+                </div>
+                <div class="footer-right">
+                    <a href="#">Лицензионное соглашение с конечным пользователем (EULA)</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/search.js"></script>
+<script src="../js/search-data.js"></script>
+</html>

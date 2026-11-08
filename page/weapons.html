@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Fight 2</title>
+    <link rel="stylesheet" href="../styles/weapons.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../page/index.html" class="logo">
+            <img src="../images/Logo.webp" alt="Shadow Fight 2">
+        </a>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="character.html">Персонажи</a>
+            <a href="demons.html">Демоны</a>
+            <a href="raids.html">Рейды</a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="free-button">Скачать</a>
+        </nav>
+        <div class="site-search">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="siteSearchInput"
+                    placeholder="ПОИСК ПО САЙТУ..."
+                    autocomplete="off"
+                >
+                <button id="siteSearchButton" type="button">⌕</button>
+            </div>
+
+            <div class="search-results" id="siteSearchResults"></div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="video_background">
+            <video autoplay muted loop playsinline id="header_background">
+                <source src="../images/Gameplay.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">Лучшие Оружие в</p>
+            <img src="../images/Logo.webp" alt="Shadow Fight 2" class="game-logo">
+        </div>
+    </div>
+    <main class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-label">Файтинг РПГ</p>
+                <p class="about-subtitle">ТЕЛО ТЕНИ. ДУХ СТАЛИ.</p>
+                <h2>Оружие Shadow Fight 2:</h2>
+                <div class="description">
+                    <p>В мире Shadow Fight 2 оружие играет важнейшую роль. Каждый вид оружия обладает собственным стилем боя, скоростью атак и особенностями. Одни виды оружия позволяют наносить быстрые удары, другие отличаются мощными атаками и большой дальностью.
+                        Тень может использовать множество видов оружия: мечи, косы, когти, нунчаки, топоры и многое другое. Выбор оружия влияет на тактику сражения и помогает подобрать подходящий стиль против каждого противника.
+
+                        По мере прохождения игры можно открывать новое оружие, улучшать его и получать особые зачарования, которые добавляют дополнительные эффекты в бою.<br>
+                        Каждое оружие — это свой стиль сражения, а правильный выбор может стать ключом к победе.</p>
+                </div>
+                <div class="about-actions">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="about-button">ИСПОЛЬЗУЙ ОРУЖИЕ В SHADOW FIGHT 2</a>
+                </div>
+            </div>
+            <div class="characters">
+                <img src="../images/Poster_Weapon.png" alt="Shadow Fight 2 Characters">
+            </div>
+        </div>
+    </main>
+    <div class="arsenal-weapons">
+        <div class="arsenal-section">
+            <h2>ТОП-5 ОРУЖИЯ</h2>
+
+            <div class="weapon-slider">
+                <button class="slider-arrow" id="weaponPrev" aria-label="Предыдущее оружие">❮</button>
+
+                <div class="weapon-content">
+                    <div class="weapon-info">
+                        <p class="weapon-number" id="weaponNumber">01 / 05</p>
+                        <h3 id="weaponName">Коса</h3>
+                        <p class="weapon-type" id="weaponType">Двуручное оружие</p>
+                        <p id="weaponDescription">Мощное оружие с широкими ударами.</p>
+
+                        <img id="weaponImage" src="../images/Scyte.webp" alt="Коса">
+                    </div>
+                    <div class="weapon-animation">
+                        <h3>АНИМАЦИЯ БОЯ</h3>
+                        <img id="weaponGif" src="../images/ScytheSuperSlash.webp" alt="Бой с оружием">
+                    </div>
+                </div>
+                <button class="slider-arrow" id="weaponNext" aria-label="Следующее оружие">❯</button>
+            </div>
+
+            <div class="slider-dots" id="weaponDots"></div>
+        </div>
+
+        <div class="arsenal-section">
+            <h2>ТОП-5 ЗАЧАРОВАНИЙ</h2>
+
+            <div class="enchant-slider">
+                <button class="slider-arrow" id="enchantPrev" aria-label="Предыдущее зачарование">❮</button>
+
+                <div class="enchant-content">
+                    <p class="weapon-number" id="enchantNumber">01 / 05</p>
+                    <img id="enchantImage" src="../images/Tornado.webp" alt="Зачарование">
+
+                    <h3 id="enchantName">Извержение</h3>
+                    <p id="enchantDescription">Особое зачарование оружия.</p>
+                    <p id="enchantEffect">Эффект: особая атака.</p>
+                </div>
+
+                    <button class="slider-arrow" id="enchantNext" aria-label="Следующее зачарование">❯</button>
+            </div>
+
+            <div class="slider-dots" id="enchantDots"></div>
+        </div>
+    </div>
+    <section class="final-cta" id="play">
+        <div class="final-container">
+            <p class="final-label">ВОРОТА ВСЁ ЕЩЁ ОТКРЫТЫ.</p>
+            <h2>
+                Твоя тень<br>
+                ждёт.
+            </h2>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="final-button">
+                СКАЧАЙТЕ SHADOW FIGHT 2</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <span>© Nekki. Все права защищены.</span>
+                </div>
+                <div class="footer-right">
+                    <a href="#">Лицензионное соглашение с конечным пользователем (EULA)</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/weapons.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/search-data.js"></script>
+</html>

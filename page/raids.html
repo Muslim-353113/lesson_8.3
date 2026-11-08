@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Fight 2</title>
+    <link rel="stylesheet" href="../styles/raids.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../page/index.html" class="logo">
+            <img src="../images/Logo.webp" alt="Shadow Fight 2">
+        </a>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="character.html">Персонажи</a>
+            <a href="demons.html">Демоны</a>
+            <a href="character.html">Оружие</a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="free-button">Скачать</a>
+        </nav>
+        <div class="site-search">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="siteSearchInput"
+                    placeholder="ПОИСК ПО САЙТУ..."
+                    autocomplete="off"
+                >
+                <button id="siteSearchButton" type="button">⌕</button>
+            </div>
+
+            <div class="search-results" id="siteSearchResults"></div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="video_background">
+            <video autoplay muted loop playsinline id="header_background">
+                <source src="../images/Gameplay.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">Рейды в</p>
+            <img src="../images/Logo.webp" alt="Shadow Fight 2" class="game-logo">
+        </div>
+    </div>
+    <div class="raids">
+        <section class="raids-section" id="raids">
+        <div class="raids-heading">
+            <p class="raids-subtitle">ПОД ЗЕМЛЁЙ СКРЫВАЕТСЯ НЕЧТО БОЛЬШЕЕ</p>
+            <h2>РЕЙДЫ: ПОДЗЕМНЫЙ МИР</h2>
+            <p class="raids-intro">
+            Собери силы, подготовь оружие и отправляйся в Подземный мир.
+            Здесь тебя ждут могущественные боссы, опасные сражения
+            и награды, достойные настоящего воина.
+            </p>
+        </div>
+        <div class="raid-story">
+            <div class="raid-story-text">
+                <span class="raid-label">ИСТОРИЯ</span>
+                <h3>ТАЙНА ПОДЗЕМНОГО МИРА</h3>
+
+                <p>
+                    За пределами привычного мира существует загадочное место —
+                    Подземный мир. Это мрачное царство, где обитают сильнейшие
+                    противники и скрываются древние тайны.
+                </p>
+
+                <p>
+                    Тень отправляется туда, чтобы испытать свои силы,
+                    встретиться с могущественными боссами и доказать,
+                    что даже самые опасные враги могут быть побеждены.
+                </p>
+
+                <p>
+                    Но победа здесь не даётся легко. Каждое сражение требует
+                    терпения, хорошей экипировки и командной работы.
+                </p>
+            </div>
+
+            <div class="raid-story-image">
+                <img src="../images/Raids1.webp" alt="Подземный мир">
+            </div>
+        </div>
+        <div class="raid-how">
+            <h3>КАК ПРОХОДИТЬ РЕЙДЫ?</h3>
+
+            <div class="raid-steps">
+                <div class="raid-step">
+                    <span>01</span>
+                    <h4>ПОДГОТОВЬСЯ</h4>
+                    <p>Выбери оружие, броню и зачарования перед битвой.</p>
+                </div>
+
+                <div class="raid-step">
+                    <span>02</span>
+                    <h4>СОБЕРИ КОМАНДУ</h4>
+                    <p>Объединись с другими игроками для совместного сражения.</p>
+                </div>
+
+                <div class="raid-step">
+                    <span>03</span>
+                    <h4>ПОБЕДИ БОССА</h4>
+                    <p>Изучай атаки противника и находи подходящий момент для удара.</p>
+                </div>
+
+                <div class="raid-step">
+                    <span>04</span>
+                    <h4>ПОЛУЧИ НАГРАДУ</h4>
+                    <p>За успешные рейды можно получить награды и ресурсы.</p>
+                </div>
+            </div>
+        </div>
+        <div class="raid-ranking">
+            <span class="raid-label">САМЫЕ ОПАСНЫЕ ПРОТИВНИКИ</span>
+            <h3>ТОП-5 СЛОЖНЫХ РЕЙДОВ</h3>
+            <p class="raid-ranking-intro">
+            Выбери босса, чтобы узнать о нём подробнее.
+            </p>
+
+            <div class="raid-boss-grid" id="raidBossGrid">
+
+                <button class="raid-boss-card active" id="raid-boss1" data-boss="0">
+                    <span class="raid-rank">01</span>
+                    <span class="raid-boss-name">АРХОС</span>
+                    <span class="raid-difficulty">ОЧЕНЬ СЛОЖНЫЙ</span>
+                </button>
+
+                <button class="raid-boss-card" id="raid-boss2" data-boss="1">
+                    <span class="raid-rank">02</span>
+                    <span class="raid-boss-name">ДРАКАЙНА</span>
+                    <span class="raid-difficulty">ОЧЕНЬ СЛОЖНЫЙ</span>
+                </button>
+
+                <button class="raid-boss-card" id="raid-boss3"data-boss="2">
+                    <span class="raid-rank">03</span>
+                    <span class="raid-boss-name">ТЕНЕБРИС</span>
+                    <span class="raid-difficulty">СЛОЖНЫЙ</span>
+                </button>
+
+                <button class="raid-boss-card" id="raid-boss4" data-boss="3">
+                    <span class="raid-rank">04</span>
+                    <span class="raid-boss-name">ВУЛКАН</span>
+                    <span class="raid-difficulty">СЛОЖНЫЙ</span>
+                </button>
+
+                <button class="raid-boss-card" id="raid-boss5" data-boss="4">
+                    <span class="raid-rank">05</span>
+                    <span class="raid-boss-name">МЕГАЛИТ</span>
+                    <span class="raid-difficulty">ОПАСНЫЙ</span>
+                </button>
+
+            </div>
+
+            <div class="raid-boss-details" id="raidBossDetails">
+
+                <div class="raid-boss-image">
+                    <img id="raidBossImage" src="assets/raid1.png" alt="Архос">
+                </div>
+
+                <div class="raid-boss-info">
+                    <p class="raid-label" id="raidBossRank">ПЕРВЫЙ В СПИСКЕ</p>
+
+                    <h3 id="raidBossTitle">АРХОС</h3>
+
+                    <p id="raidBossDescription">
+                    Могущественный противник, который требует
+                    от игроков хорошей подготовки и командной работы.
+                    </p>
+
+                    <div class="raid-difficulty-box">
+                        <span>УРОВЕНЬ СЛОЖНОСТИ</span>
+                        <div class="raid-difficulty-bar">
+                            <div id="raidDifficultyFill"></div>
+                        </div>
+                        <strong id="raidDifficultyText">10 / 10</strong>
+                    </div>
+
+                    <div class="raid-boss-tip">
+                        <strong>СОВЕТ:</strong>
+                        <p id="raidBossTip">
+                            Не торопись атаковать. Изучай движения босса
+                            и выбирай подходящий момент.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="raid-final-text">
+            <h3>ГОТОВ СПУСТИТЬСЯ В ПОДЗЕМНЫЙ МИР?</h3>
+            <p>
+            Самые сильные воины не боятся испытаний.
+            Докажи свою силу и стань легендой Подземного мира!
+            </p>
+        </div>
+        </section>
+    </div>
+    <section class="final-cta" id="play">
+        <div class="final-container">
+            <p class="final-label">ВОРОТА ВСЁ ЕЩЁ ОТКРЫТЫ.</p>
+            <h2>
+                Твоя тень<br>
+                ждёт.
+            </h2>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="final-button">
+                СКАЧАЙТЕ SHADOW FIGHT 2</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <span>© Nekki. Все права защищены.</span>
+                </div>
+                <div class="footer-right">
+                    <a href="#">Лицензионное соглашение с конечным пользователем (EULA)</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/raids.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/search-data.js"></script>
+</html>

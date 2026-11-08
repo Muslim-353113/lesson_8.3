@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Fight 2 Персонажи</title>
+    <link rel="stylesheet" href="../styles/demons.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../page/index.html" class="logo">
+            <img src="../images/Logo.webp" alt="Shadow Fight 2">
+        </a>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="character.html">Персонажи</a>
+            <a href="weapons.html">Топ Оружие</a>
+            <a href="raids.html">Рейды</a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="free-button">Скачать</a>
+        </nav>
+        <div class="site-search">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="siteSearchInput"
+                    placeholder="ПОИСК ПО САЙТУ..."
+                    autocomplete="off"
+                >
+                <button id="siteSearchButton" type="button">⌕</button>
+            </div>
+
+            <div class="search-results" id="siteSearchResults"></div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="video_background">
+            <video autoplay muted loop playsinline id="header_background">
+                <source src="../images/Gameplay.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">Демоны в</p>
+            <img src="../images/Logo.webp" alt="Shadow Fight 2" class="game-logo">
+        </div>
+    </div>
+    <main class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-label">Демоны</p>
+                <p class="about-subtitle">Шесть демонов — хранители печатей Врат Теней</p>
+                <h2>Shadow Fight 2 Демоны:</h2>
+                <div class="description">
+                    <p>
+                    Демоны — могущественные противники, с которыми Тень сталкивается на своём пути после открытия Врат Теней.<br>
+                    Каждый из них владеет собственной территорией, имеет уникальный стиль боя и подчиняет себе опасных воинов. Победа над демонами приближает Тень к разгадке тайны Врат и открывает путь к новым испытаниям.<br>
+                    I. Рысь — Повелитель ассасинов
+                    Рысь возглавляет тайную организацию убийц. Он предпочитает скорость, скрытность и внезапные атаки грубой силе. Его бойцы действуют из тени, а сам Рысь считается одним из самых хитрых противников Тени.<br>
+                    II. Отшельник — Мастер древней магии
+                    Отшельник посвятил жизнь изучению боевых искусств и магии. Он живёт вдали от обычного мира и обладает знаниями, которые делают его опасным противником. Его ученики также владеют необычными способностями.<br>
+                    III. Мясник — Властелин преступного мира
+                    Мясник известен своей жестокостью и огромной физической силой. Он окружён преданными бойцами и привык решать конфликты силой. Его владения стали местом, где слабость не прощается.<br>
+                    IV. Оса — Королева пиратов
+                    Оса управляет пиратами и контролирует морские территории. Она полагается на ловкость, скорость и мастерство владения оружием. Её флот и верные воины делают её серьёзной угрозой для любого противника.<br>
+                    V. Вдова — Таинственная правительница
+                    Вдова окружена тайнами и роскошью. Она умеет использовать чужие слабости и управлять людьми ради собственной выгоды. Её окружение состоит из опасных воинов, готовых выполнить любой приказ.<br>
+                    VI. Сёгун — Военачальник
+                    Сёгун — могущественный полководец, обладающий армией верных самураев. Он ценит дисциплину, порядок и силу. Чтобы добраться до него, Тени предстоит преодолеть сопротивление его телохранителей.<br>
+                    VII. Титан — Повелитель Врат Теней
+                    Титан — главный противник Тени и властитель мира за Вратами Теней. Его сила превосходит силу остальных демонов. Именно встреча с ним становится главным испытанием путешествия Тени.</p>
+                </div>
+                <div class="about-actions">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="about-button">ВЫЗЫВАЙ ИМ ВЫЗОВ В SHADOW FIGHT 2</a>
+                </div>
+            </div>
+            <div class="characters">
+                <img src="../images/Shadow_Fight_2_Poster.jpg" alt="Shadow Fight 2 Characters">
+            </div>
+        </div>
+    </main>
+    <section class="demons-section">
+        <div class="demons-container">
+            <div class="demons-header">
+                <p class="demons-label">ВОРОТА ОТКРЫТЫ.</p>
+                <h2>Шесть демонов.<br>Одна тень.</h2>
+                <p class="demons-description">
+                    Каждый акт заканчивается дуэлью, которую вы должны заслужить.
+                    Победите демона, и его оружие станет вашим.
+                </p>
+            </div>
+            <div class="demons-grid">
+                <div class="demon-card" id="demon1" data-name="РЫСЬ"
+                    data-category="СКОРОСТЬ"
+                    data-description="Лидер ассасинов. Быстрый и опасный противник, который использует ловушки и смертоносные клинки."
+                    data-weapon="Когти Рыси">
+                    <div class="demon-image">
+                        <span class="demon-number">I</span>
+                        <img src="../images/Demon_1.webp" alt="Рысь">
+                    </div>
+                    <div class="demon-info">
+                        <p class="demon-category">СКОРОСТЬ</p>
+                        <h3>РЫСЬ</h3>
+                        <p class="demon-text">Клинок, появления которого никогда не ожидаешь.</p>
+                    </div>
+                </div>
+                <div class="demon-card" id="demon2" data-name="ОТШЕЛЬНИК"
+                    data-category="МАГИЯ"
+                    data-description="Мастер древних искусств, способный управлять молниями и использовать магию против своих врагов."
+                    data-weapon="Посох Отшельника">
+                    <div class="demon-image">
+                        <span class="demon-number">II</span>
+                        <img src="../images/Demon_2.webp" alt="Отшельник">
+                    </div>
+                    <div class="demon-info">
+                        <p class="demon-category">МАГИЯ</p>
+                        <h3>ОТШЕЛЬНИК</h3>
+                        <p class="demon-text">Мастер древних искусств и повелитель молний.</p>
+                    </div>
+                </div>
+                <div class="demon-card" id="demon3" data-name="МЯСНИК"
+                    data-category="ЖЕСТОКАЯ СИЛА"
+                    data-description="Безжалостный боец, который сокрушает противников мощными ударами и не знает пощады."
+                    data-weapon="Тесак Мясника">
+                    <div class="demon-image">
+                        <span class="demon-number">III</span>
+                        <img src="../images/Demon_3.webp" alt="Мясник">
+                    </div>
+                    <div class="demon-info">
+                        <p class="demon-category">ЖЕСТОКАЯ СИЛА</p>
+                        <h3>МЯСНИК</h3>
+                        <p class="demon-text">Безжалостный боец, чьи удары сокрушают врагов.</p>
+                    </div>
+                </div>
+                <div class="demon-card" id="demon4" data-name="ОСА"
+                    data-category="ЛОВКОСТЬ"
+                    data-description="Опасная королева пиратов, чья скорость и мастерство владения оружием делают её грозным противником."
+                    data-weapon="Мечи Осы">
+                    <div class="demon-image">
+                        <span class="demon-number">IV</span>
+                        <img src="../images/Demon_4.webp" alt="Оса">
+                    </div>
+                    <div class="demon-info">
+                        <p class="demon-category">ЛОВКОСТЬ</p>
+                        <h3>ОСА</h3>
+                        <p class="demon-text">Королева пиратов, опасная и быстрая в бою.</p>
+                    </div>
+                </div>
+                <div class="demon-card" id="demon5" data-name="ВДОВА"
+                    data-category="КОВАРСТВО"
+                    data-description="Загадочная и опасная противница, которая использует магию и хитрость, чтобы одержать победу."
+                    data-weapon="Оружие Вдовы">
+                    <div class="demon-image">
+                        <span class="demon-number">V</span>
+                        <img src="../images/Demon_5.webp" alt="Вдова">
+                    </div>
+                    <div class="demon-info">
+                        <p class="demon-category">КОВАРСТВО</p>
+                        <h3>ВДОВА</h3>
+                        <p class="demon-text">Загадочная противница, скрывающая свои истинные намерения.</p>
+                    </div>
+                </div>
+                <div class="demon-card" id="demon6" data-name="СЁГУН"
+                    data-category="ДИСЦИПЛИНА"
+                    data-description="Могущественный воин и полководец, окружённый верными телохранителями."
+                    data-weapon="Катаны Сёгуна">
+                    <div class="demon-image">
+                        <span class="demon-number">VI</span>
+                        <img src="../images/Demon_6.webp" alt="Сёгун">
+                    </div>
+                    <div class="demon-info">
+                        <p class="demon-category">ДИСЦИПЛИНА</p>
+                        <h3>СЁГУН</h3>
+                        <p class="demon-text">Полководец, чья сила подкреплена верными воинами.</p>
+                    </div>
+                </div>
+                <div class="demon-card" id="demon7" data-name="ТИТАН"
+                    data-category="ФИНАЛЬНАЯ ДУЭЛЬ"
+                    data-description="Главный противник Shadow. Тот, кто стоит за открытием Врат Теней."
+                    data-weapon="Меч Титана">
+                    <div class="demon-image">
+                        <span class="demon-number">VII</span>
+                        <img src="../images/Demon_7.webp" alt="Титан">
+                    </div>
+                    <div class="demon-info">
+                        <p class="demon-category">ФИНАЛЬНАЯ ДУЭЛЬ</p>
+                        <h3>ТИТАН</h3>
+                        <p class="demon-text">ТОТ, КТО ОТКРЫЛ ВОРОТА.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="demon-modal" id="demonModal">
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-image">
+            <img id="modalImage" src="" alt="">
+        </div>
+        <div class="modal-info">
+            <p class="demon-category" id="modalCategory"></p>
+            <h2 id="modalName"></h2>
+
+            <div class="modal-line"></div>
+
+            <p class="modal-description" id="modalDescription"></p>
+
+            <div class="modal-extra">
+                <p>ОРУЖИЕ</p>
+                <h3 id="modalWeapon"></h3>
+            </div>
+        </div>
+
+    </div>
+</div>
+<section class="final-cta" id="play">
+    <div class="final-container">
+        <p class="final-label">ВОРОТА ВСЁ ЕЩЁ ОТКРЫТЫ.</p>
+        <h2>
+            Твоя тень<br>
+            ждёт.
+        </h2>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=ru" class="final-button">
+            СКАЧАЙТЕ SHADOW FIGHT 2</a>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-left">
+                <span>© Nekki. Все права защищены.</span>
+            </div>
+            <div class="footer-right">
+                <a href="#">Лицензионное соглашение с конечным пользователем (EULA)</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="../js/demons.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/search-data.js"></script>
+</html>
